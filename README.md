@@ -9,12 +9,22 @@ In **arc_check.sh** change ***<CHANGE_ME>*** value to match the size you want. F
 
 
 ### Crontab
-**1>** redirects stdout to /tmp/arc_size.log
 
-**2>** stderr to /tmp/arc_size.errlog
+Go to **System Settings -> Advanced -> Cron Jobs** 
 
-<_cronexpression_> /dir/to/file/arc_check.sh 1> /tmp/arc_size.log 2> /tmp/arc_size.errlog
+Click **Add**
 
+In **Command** filed you need write path that contains your script, as follows:
+
+/dir/to/file/arc_check.sh 
+
+You can run this script as root, but you should set your permission up so that a special user can run and edit zfs_arc_max file.
+
+In **Schedule** you set it to run every at minute 0 past every 4th hour.
+
+00 */4 * * * 
+
+You can also uncheck Hide Standard Output/Error. 
 
 ### InitScript
 
