@@ -5,7 +5,7 @@ Script for checking if arc size was changed, and changing it back.
 ## Usage
 Set **arc_check.sh** file to run with cron, InitScript or both.
 
-In **arc_check.sh** change ***<CHANGE_ME>*** value to match the size you want. For converting GiB to bytes I've used [this site](https://www.dataunitconverter.com/gibibyte-to-byte). 
+In **arc_check.sh** change ***<CHANGE_ME>*** value to match the size you want. For converting GiB to bytes. I've used [this site](https://www.dataunitconverter.com/gibibyte-to-byte). 
 
 
 ### Crontab
