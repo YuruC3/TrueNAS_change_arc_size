@@ -7,6 +7,7 @@ Set **arc_check.sh** file to run with cron, InitScript or both.
 
 In **arc_check.sh** change ***<CHANGE_ME>*** value to match the size you want. For converting GiB to bytes. I've used [this site](https://www.dataunitconverter.com/gibibyte-to-byte). 
 
+I'll be maybe developing it further on my own [gitea](https://tea.shupogaki.org/YuruC3/TrueNAS_change_arc_size) cuz it feels nicer to use than Github.
 
 ### Crontab
 
